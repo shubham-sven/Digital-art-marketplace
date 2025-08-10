@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVault - Digital Art Marketplace</title>
+    <meta name="description" content="Discover, collect, and sell extraordinary digital art from talented artists worldwide">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>ArtVault</h1>
+                <span class="nav-tagline">Digital Art Marketplace</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#browse" class="nav-link">Browse</a>
+                <a href="#artists" class="nav-link">Artists</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#upload" class="nav-link upload-btn">Upload Art</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="wallet-btn"><i class="fas fa-wallet"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Discover Extraordinary Digital Art</h2>
+            <p class="hero-subtitle">Connect with talented artists, collect unique digital masterpieces, and support creativity worldwide</p>
+            <div class="hero-cta">
+                <button class="cta-primary">Explore Artwork</button>
+                <button class="cta-secondary">Start Creating</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-artwork">
+                <img src="https://i.pinimg.com/736x/e0/24/93/e024932621e8b63c60de41c31778ed6e.jpg" height="500" alt="Featured Digital Art">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h3 class="section-title">Explore Categories</h3>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/200x150/8b5cf6/ffffff?text=Digital+Paintings" alt="Digital Paintings">
+                    <h4>Digital Paintings</h4>
+                    <p>2,500+ artworks</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/200x150/06b6d4/ffffff?text=3D+Art" alt="3D Art">
+                    <h4>3D Art</h4>
+                    <p>1,800+ artworks</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/200x150/10b981/ffffff?text=NFTs" alt="NFTs">
+                    <h4>NFT Collections</h4>
+                    <p>950+ artworks</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/200x150/f59e0b/ffffff?text=Photography" alt="Photography">
+                    <h4>Digital Photography</h4>
+                    <p>3,200+ artworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Artwork -->
+    <section class="trending">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Trending Artwork</h3>
+                <div class="filter-tabs">
+                    <button class="filter-tab active">All</button>
+                    <button class="filter-tab">Digital Art</button>
+                    <button class="filter-tab">NFTs</button>
+                    <button class="filter-tab">Photography</button>
+                </div>
+            </div>
+            <div class="artwork-grid">
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Artwork+1" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Ethereal Dreams</h4>
+                        <p class="artist-name">by @digitaldreamer</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.5 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Artwork+2" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Neon Cityscape</h4>
+                        <p class="artist-name">by @neonartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">$120</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 189</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://via.placeholder.com/300x400/06b6d4/ffffff?text=Artwork+3" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Abstract Waves</h4>
+                        <p class="artist-name">by @wavecreator</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.3 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 156</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://via.placeholder.com/300x400/10b981/ffffff?text=Artwork+4" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Forest Spirits</h4>
+                        <p class="artist-name">by @natureartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">$95</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 278</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="load-more-btn">Load More Artwork</button>
+        </div>
+    </section>
+
+    <!-- Featured Artists -->
+    <section class="featured-artists">
+        <div class="container">
+            <h3 class="section-title">Featured Artists</h3>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <div class="artist-avatar">
+                        <img src="https://via.placeholder.com/100x100/6366f1/ffffff?text=Artist+1" alt="Artist Avatar">
+                    </div>
+                    <h4 class="artist-name">Digital Dreamer</h4>
+                    <p class="artist-specialty">Digital Paintings & Concept Art</p>
+                    <div class="artist-stats">
+                        <span>127 artworks</span>
+                        <span>4.9★ rating</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="artist-card">
+                    <div class="artist-avatar">
+                        <img src="https://via.placeholder.com/100x100/8b5cf6/ffffff?text=Artist+2" alt="Artist Avatar">
+                    </div>
+                    <h4 class="artist-name">Neon Artist</h4>
+                    <p class="artist-specialty">3D Art & Animation</p>
+                    <div class="artist-stats">
+                        <span>89 artworks</span>
+                        <span>4.8★ rating</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="artist-card">
+                    <div class="artist-avatar">
+                        <img src="https://via.placeholder.com/100x100/06b6d4/ffffff?text=Artist+3" alt="Artist Avatar">
+                    </div>
+                    <h4 class="artist-name">Wave Creator</h4>
+                    <p class="artist-specialty">Abstract & Generative Art</p>
+                    <div class="artist-stats">
+                        <span>156 artworks</span>
+                        <span>4.7★ rating</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated</h3>
+                <p>Get the latest digital art drops and exclusive artist features</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ArtVault</h4>
+                    <p>The premier marketplace for digital art and NFTs</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Marketplace</h4>
+                    <ul>
+                        <li><a href="#">All Artwork</a></li>
+                        <li><a href="#">Digital Art</a></li>
+                        <li><a href="#">NFTs</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArtVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
