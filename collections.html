@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Collections - ArtVault</title>
+    <meta name="description" content="Explore curated digital art collections from top artists and themes">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>ArtVault</h1>
+                <span class="nav-tagline">Digital Art Marketplace</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="browse.html" class="nav-link">Browse</a>
+                <a href="artists.html" class="nav-link">Artists</a>
+                <a href="collections.html" class="nav-link active">Collections</a>
+                <a href="upload.html" class="nav-link upload-btn">Upload Art</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search collections...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="wallet-btn"><i class="fas fa-wallet"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Collections Header -->
+    <section class="collections-header">
+        <div class="container">
+            <h1 class="page-title">Art Collections</h1>
+            <p class="page-subtitle">Discover curated collections of digital art from emerging and established artists</p>
+
+            <!-- Collection Categories -->
+            <div class="collection-categories">
+                <button class="category-tab active" data-category="all">All Collections</button>
+                <button class="category-tab" data-category="featured">Featured</button>
+                <button class="category-tab" data-category="trending">Trending</button>
+                <button class="category-tab" data-category="new">New Releases</button>
+                <button class="category-tab" data-category="limited">Limited Edition</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="collections-content">
+        <div class="container">
+            <div class="collections-grid">
+                <!-- Featured Collection -->
+                <div class="collection-card featured">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Cyberpunk Dreams</h3>
+                        <p class="collection-artist">by @cyberartist</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 25 artworks</span>
+                            <span><i class="fas fa-heart"></i> 1,234 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From 0.5 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Abstract Emotions</h3>
+                        <p class="collection-artist">by @abstractmaster</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 18 artworks</span>
+                            <span><i class="fas fa-heart"></i> 892 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Nature's Symphony</h3>
+                        <p class="collection-artist">by @natureartist</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 32 artworks</span>
+                            <span><i class="fas fa-heart"></i> 1,567 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From 0.8 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Urban Legends</h3>
+                        <p class="collection-artist">by @urbanartist</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 15 artworks</span>
+                            <span><i class="fas fa-heart"></i> 743 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From $200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Digital Portraits</h3>
+                        <p class="collection-artist">by @portraitmaster</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 28 artworks</span>
+                            <span><i class="fas fa-heart"></i> 1,089 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From 0.6 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Future Visions</h3>
+                        <p class="collection-artist">by @futureartist</p>
+                        <div class="collection-stats">
+                            <span><i class="fas fa-image"></i> 22 artworks</span>
+                            <span><i class="fas fa-heart"></i> 956 likes</span>
+                        </div>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                            <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Artwork">
+                        </div>
+                        <div class="collection-overlay">
+                            <button class="view-collection-btn">View Collection</button>
+                            <div class="collection-price">
+                                <span class="price-range">From $300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
