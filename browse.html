@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Artworks - ArtVault</title>
+    <meta name="description" content="Browse and discover amazing digital artworks from talented artists worldwide">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>ArtVault</h1>
+                <span class="nav-tagline">Digital Art Marketplace</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="browse.html" class="nav-link active">Browse</a>
+                <a href="artists.html" class="nav-link">Artists</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="upload.html" class="nav-link upload-btn">Upload Art</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search artwork, artists...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="wallet-btn"><i class="fas fa-wallet"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Browse Header -->
+    <section class="browse-header">
+        <div class="container">
+            <h1 class="page-title">Browse Artworks</h1>
+            <p class="page-subtitle">Discover and collect extraordinary digital art from talented creators worldwide</p>
+
+            <!-- Advanced Filters -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="digital-paintings">Digital Paintings</option>
+                        <option value="3d-art">3D Art</option>
+                        <option value="nft">NFTs</option>
+                        <option value="photography">Photography</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="portrait">Portrait</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">Price Range</option>
+                        <option value="0-50">Under 0.5 ETH</option>
+                        <option value="50-200">$50 - $200</option>
+                        <option value="200-500">$200 - $500</option>
+                        <option value="500+">$500+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">Sort By</option>
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+                <button class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Grid -->
+    <section class="browse-content">
+        <div class="container">
+            <div class="artwork-grid">
+                <!-- More artwork cards for browsing -->
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Cyber Punk City</h4>
+                        <p class="artist-name">by @cyberartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">1.2 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 342</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Neon Dreams</h4>
+                        <p class="artist-name">by @neonmaster</p>
+                        <div class="artwork-stats">
+                            <span class="price">$180</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 267</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Ocean Waves</h4>
+                        <p class="artist-name">by @waveartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.8 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 198</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Mountain Vista</h4>
+                        <p class="artist-name">by @mountainview</p>
+                        <div class="artwork-stats">
+                            <span class="price">$250</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 445</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Urban Abstract</h4>
+                        <p class="artist-name">by @urbanartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.6 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 156</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Forest Mystery</h4>
+                        <p class="artist-name">by @forestwhisper</p>
+                        <div class="artwork-stats">
+                            <span class="price">$120</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 289</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Cosmic Dreams</h4>
+                        <p class="artist-name">by @cosmicartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">1.8 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 423</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Geometric Harmony</h4>
+                        <p class="artist-name">by @geometricmaster</p>
+                        <div class="artwork-stats">
+                            <span class="price">$95</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 187</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Digital Portraits</h4>
+                        <p class="artist-name">by @portraitstudio</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.4 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 312</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Surreal Landscapes</h4>
+                        <p class="artist-name">by @surrealist</p>
+                        <div class="artwork-stats">
+                            <span class="price">$280</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 198</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Minimalist Forms</h4>
+                        <p class="artist-name">by @minimalist</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.3 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 267</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">Vintage Memories</h4>
+                        <p class="artist-name">by @vintageartist</p>
+                        <div class="artwork-stats">
+                            <span class="price">$150</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 345</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Digital Artwork">
+                        <div class="artwork-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4 class="artwork-title">AI Generated Dreams</h4>
+                        <p class="artist-name">by @aidreamer</p>
+                        <div class="artwork-stats">
+                            <span class="price">0.7 ETH</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 412</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
