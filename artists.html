@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Artists - ArtVault</title>
+    <meta name="description" content="Discover talented digital artists and their amazing portfolios">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>ArtVault</h1>
+                <span class="nav-tagline">Digital Art Marketplace</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="browse.html" class="nav-link">Browse</a>
+                <a href="artists.html" class="nav-link active">Artists</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="upload.html" class="nav-link upload-btn">Upload Art</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search artists...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="wallet-btn"><i class="fas fa-wallet"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Artists Header -->
+    <section class="artists-header">
+        <div class="container">
+            <h1 class="page-title">Featured Artists</h1>
+            <p class="page-subtitle">Meet the talented creators behind extraordinary digital art</p>
+
+            <!-- Artist Filters -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">All Specialties</option>
+                        <option value="digital-paintings">Digital Paintings</option>
+                        <option value="3d-art">3D Art</option>
+                        <option value="ai-art">AI & Generative Art</option>
+                        <option value="photography">Digital Photography</option>
+                        <option value="nft">NFT Artist</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">Experience Level</option>
+                        <option value="emerging">Emerging Artists</option>
+                        <option value="established">Established Artists</option>
+                        <option value="master">Master Artists</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option value="">Sort By</option>
+                        <option value="followers">Most Followers</option>
+                        <option value="artworks">Most Artworks</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="newest">Recently Joined</option>
+                    </select>
+                </div>
+                <button class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Grid -->
+    <section class="artists-content">
+        <div class="container">
+            <div class="artists-grid">
+                <!-- Featured Artists -->
+                <div class="artist-profile-card">
+                    <div class="artist-header">
+                        <div class="artist-avatar-large">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Beeple_2018.jpg/220px-Beeple_2018.jpg" alt="Beeple Avatar">
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">Beeple (Mike Winkelmann)</h3>
+                            <p class="artist-location"><i class="fas fa-map-marker-alt"></i> Charleston, South Carolina</p>
+                            <p class="artist-bio">Digital artist known for his unique blend of traditional and digital art techniques. Creator of the iconic "Everydays" series.</p>
+                        </div>
+                    </div>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">127</span>
+                            <span class="stat-label">Artworks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2.1M</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$69M</span>
+                            <span class="stat-label">Total Sales</span>
+                        </div>
+                    </div>
+                    <div class="artist-gallery">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                    </div>
+                    <div class="artist-actions">
+                        <button class="follow-btn-large">Follow</button>
+                        <button class="view-profile-btn">View Full Profile</button>
+                    </div>
+                </div>
+
+                <div class="artist-profile-card">
+                    <div class="artist-header">
+                        <div class="artist-avatar-large">
+                            <img src="https://www.designboom.com/wp-content/uploads/2020/01/refik-anadol-designboom-01.jpg" alt="Refik Anadol Avatar">
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">Refik Anadol</h3>
+                            <p class="artist-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</p>
+                            <p class="artist-bio">Pioneer in AI and machine learning art. Creates immersive installations that blend data visualization with artistic expression.</p>
+                        </div>
+                    </div>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">89</span>
+                            <span class="stat-label">Artworks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">890K</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$12M</span>
+                            <span class="stat-label">Total Sales</span>
+                        </div>
+                    </div>
+                    <div class="artist-gallery">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                    </div>
+                    <div class="artist-actions">
+                        <button class="follow-btn-large">Follow</button>
+                        <button class="view-profile-btn">View Full Profile</button>
+                    </div>
+                </div>
+
+                <div class="artist-profile-card">
+                    <div class="artist-header">
+                        <div class="artist-avatar-large">
+                            <img src="https://kristakim.com/wp-content/uploads/2020/01/Krista-Kim-Headshot-2019.jpg" alt="Krista Kim Avatar">
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">Krista Kim</h3>
+                            <p class="artist-location"><i class="fas fa-map-marker-alt"></i> New York, New York</p>
+                            <p class="artist-bio">VR artist and architect creating immersive digital worlds. Known for her innovative approach to virtual reality art.</p>
+                        </div>
+                    </div>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">156</span>
+                            <span class="stat-label">Artworks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">450K</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.7</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$8.5M</span>
+                            <span class="stat-label">Total Sales</span>
+                        </div>
+                    </div>
+                    <div class="artist-gallery">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                    </div>
+                    <div class="artist-actions">
+                        <button class="follow-btn-large">Follow</button>
+                        <button class="view-profile-btn">View Full Profile</button>
+                    </div>
+                </div>
+
+                <div class="artist-profile-card">
+                    <div class="artist-header">
+                        <div class="artist-avatar-large">
+                            <img src="https://www.artnews.com/wp-content/uploads/2021/03/Pak-1.jpg" alt="Pak Avatar">
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">Pak</h3>
+                            <p class="artist-location"><i class="fas fa-map-marker-alt"></i> Seoul, South Korea</p>
+                            <p class="artist-bio">3D artist and NFT creator known for his hyper-realistic sculptures and digital collectibles.</p>
+                        </div>
+                    </div>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">203</span>
+                            <span class="stat-label">Artworks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1.2M</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$45M</span>
+                            <span class="stat-label">Total Sales</span>
+                        </div>
+                    </div>
+                    <div class="artist-gallery">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100&q=80" alt="Artwork">
+                    </div>
+                    <div class="artist-actions">
+                        <button class="follow-btn-large">Follow</button>
+                        <button class="view-profile-btn">View Full Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
