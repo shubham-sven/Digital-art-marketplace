@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+appl/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 4rem;
 }
 
 /* Navigation */
@@ -36,6 +37,36 @@ body {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #1e293b;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 1100;
+}
+
+.search-input.active {
+    display: block;
 }
 
 .nav-brand h1 {
@@ -258,7 +289,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(99, 102, 241, 0.8);
+    background: rgba(99, 102, 241, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,11 +319,11 @@ body {
 .artwork-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #6366f1;
+    color: #e5e7eb;
 }
 
 .artist-name {
-    color: #9ca3af;
+    color: #cbd5e1;
     margin-bottom: 1rem;
 }
 
@@ -300,7 +331,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    color: #6366f1;
+    color: #e5e7eb;
 }
 
 .load-more-btn {
@@ -344,6 +375,28 @@ body {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 1rem;
+    object-fit: cover;
+    border: 3px solid #6366f1;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.artist-avatar img:hover {
+    transform: scale(1.05);
+    border-color: #8b5cf6;
+}
+
+.sample-artwork img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: 2px solid #6366f1;
+    transition: transform 0.3s ease;
+}
+
+.sample-artwork img:hover {
+    transform: scale(1.05);
 }
 
 .artist-name {
